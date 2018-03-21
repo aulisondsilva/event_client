@@ -3,10 +3,10 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**event_id** | **Integer** |  | [optional] 
-**project_name** | **String** |  | [optional] 
-**process_name** | **String** |  | [optional] 
-**status** | **String** | Order Status | [optional] 
+**event_id** | **Integer** | Required in case of update | [optional] 
+**project_name** | **String** |  | [required] 
+**process_name** | **String** |  | [required] 
+**status** | **String** | started, success, aborted, error | [required] 
 **error_type** | **String** |  | [optional] 
 **error_description** | **String** |  | [optional] 
 **server_id** | **String** |  | [optional] 
@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **wan_ip** | **String** |  | [optional] 
 **progress** | **Integer** |  | [optional] 
 **execution_time** | **Integer** |  | [optional] 
-**start_time** | **Integer** |  | [optional] 
+**start_time** | **Integer** | required at add event | [optional] 
 **end_time** | **Integer** |  | [optional] 
 
 

@@ -22,7 +22,16 @@ require 'event_client'
 
 api_instance = EventClient::RegisterEventApi.new
 
-body = EventClient::Event.new # Event | Event object that needs to be added to the Index
+body = body =   {
+                   project_name: "Export",
+                   process_name: "Autobot Export One Day",
+                   status: "started",
+                   server_id: "server name",
+                   lan_ip: "xx.xx.xx.xx",
+                   wan_ip: "xxx.xx.xxx.xxx",
+                   start_time: "Timestamp in utc""
+                }
+ # Event | Event object that needs to be added to the Index
 
 
 begin
@@ -69,7 +78,18 @@ require 'event_client'
 
 api_instance = EventClient::RegisterEventApi.new
 
-body = EventClient::Event.new # Event | Event object that needs to be added to the Index
+body =   {
+            event_id: "87654567890987654321234567890",
+            project_name: "Export",
+            process_name: "Autobot Export One Day",
+            status: "started",
+            server_id: "server name",
+            lan_ip: "xx.xx.xx.xx",
+            wan_ip: "xxx.xx.xxx.xxx",
+            start_time: "Timestamp in utc",
+            progress: 40
+         } 
+ # Event | Event object that needs to be added to the Index
 
 
 begin
